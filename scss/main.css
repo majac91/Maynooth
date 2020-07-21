@@ -135,6 +135,10 @@ p {
   .fa-times {
     display: none;
   }
+  .open {
+    -webkit-transition: all 2s forwards;
+    transition: all 2s forwards;
+  }
   .open .fa-times {
     display: block;
   }
@@ -144,6 +148,13 @@ p {
   .open .bottom-navbar {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+  .open .main-header {
+    -webkit-filter: blur(12px);
+    -moz-filter: blur(12px);
+    -o-filter: blur(12px);
+    -ms-filter: blur(12px);
+    filter: blur(12px);
   }
 }
 
@@ -175,6 +186,11 @@ p {
 
 .main-header-text {
   min-height: 100vh;
+}
+
+.owl-carousel img {
+  height: 100vh;
+  width: 100%;
 }
 
 .center {

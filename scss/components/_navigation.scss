@@ -73,6 +73,7 @@
         display: none;
     }
     .open {
+        transition: all 2s forwards;
         .fa-times {
             display: block;
         }
@@ -82,6 +83,12 @@
         .bottom-navbar {
             transform: translateY(0);
         }
+        .main-header {
+            -webkit-filter: blur(12px);
+            -moz-filter: blur(12px);
+            -o-filter: blur(12px);
+            -ms-filter: blur(12px);
+            filter: blur(12px);
+          }
     }
-
 }

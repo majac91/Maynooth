@@ -101,12 +101,20 @@ p {
   .fa-times {
     display: none; }
 
-  .open .fa-times {
-    display: block; }
-  .open .fa-bars {
-    display: none; }
-  .open .bottom-navbar {
-    transform: translateY(0); } }
+  .open {
+    transition: all 2s forwards; }
+    .open .fa-times {
+      display: block; }
+    .open .fa-bars {
+      display: none; }
+    .open .bottom-navbar {
+      transform: translateY(0); }
+    .open .main-header {
+      -webkit-filter: blur(12px);
+      -moz-filter: blur(12px);
+      -o-filter: blur(12px);
+      -ms-filter: blur(12px);
+      filter: blur(12px); } }
 .main-header {
   background: url(/img/_homepage/homepage_headerimage_01.png) top no-repeat;
   min-height: 90vh;
@@ -129,6 +137,10 @@ p {
 
 .main-header-text {
   min-height: 100vh; }
+
+.owl-carousel img {
+  height: 100vh;
+  width: 100%; }
 
 .center {
   display: flex;

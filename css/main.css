@@ -23,6 +23,18 @@ body {
   font-weight: 400;
   line-height: 1.5; }
 
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400; }
+
+hgroup {
+  color: #FFFFFF; }
+
+section {
+  color: #000000; }
+
+p {
+  font-size: 1.8rem; }
+
 .main-heading {
   font-size: 3rem;
   color: #FFFFFF; }
@@ -96,11 +108,26 @@ body {
   .open .bottom-navbar {
     transform: translateY(0); } }
 .main-header {
-  background: url(../img/_homepage/homepage_headerimage_01.png) center no-repeat;
+  background: url(../img/_homepage/homepage_headerimage_01.png) top no-repeat;
   min-height: 90vh;
   overflow: hidden; }
+  .main-header button {
+    background: #C88770;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: 400; }
+    .main-header button:hover {
+      background: #3B4B53;
+      transition: 0.4s ease;
+      cursor: pointer; }
 
-.header-text {
+.main-header-text {
   min-height: 100vh; }
 
 .center {

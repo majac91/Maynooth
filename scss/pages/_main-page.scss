@@ -1,9 +1,12 @@
 .main-header {
-    background: url(../img/_homepage/homepage_headerimage_01.png) center no-repeat;
+    background: url(../img/_homepage/homepage_headerimage_01.png) top no-repeat;
     min-height: 90vh;
     overflow: hidden;
+    button {
+        @include btn-pink;
+    }
 }
 
-.header-text {
+.main-header-text {
     min-height: 100vh;
 }

@@ -1,0 +1,30 @@
+//---------------- Utilities ------------------*\
+
+@import 'utilities/variables';
+@import 'utilities/media-queries';
+@import 'utilities/mixins';
+
+//---------------- Base ------------------*\
+
+@import 'base/config';
+@import 'base/typography';
+
+//-------------  Components ---------------*\
+
+@import 'components/buttons';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/navigation';
+
+
+//---------------- Pages ------------------*\
+
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/main-page';
+@import 'pages/shop';
+
+
+//---------------- Layout ------------------*\
+
+@import 'layout/flex-elements';

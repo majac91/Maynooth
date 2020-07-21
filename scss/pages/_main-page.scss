@@ -11,10 +11,10 @@
     min-height: 100vh;
 }
 
-
-.owl-carousel {
-    img {
-        height: 100vh;
-        width: 100%;
+#header {
+    .owl-slide-text {
+        button {
+            @include btn-pink;
+        }
     }
 }

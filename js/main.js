@@ -9,55 +9,77 @@ menuToggler.addEventListener('click', function () {
     body.classList.toggle('open');
 });
 
+$(document).ready(function () {
+  $('.owl-carousel').owlCarousel({
+   items: 1,
+   loop: true,
+   nav: false,
+   dots: true,
+   autoplay: true,
+   autoplaySpeed: 1000,
+   smartSpeed: 1500,
+   autoplayHoverPause: true,
 
-$(".owl-carousel").on("initialized.owl.carousel", () => {
-    setTimeout(() => {
-      $(".owl-item.active .owl-slide-animated").addClass("is-transitioned");
-      $("section").show();
-    }, 200);
   });
+});
+
+
+
+// $(".owl-carousel").on("initialized.owl.carousel", () => {
+//     setTimeout(() => {
+//       $(".owl-item.active .owl-slide-animated").addClass("is-transitioned");
+//       $("section").show();
+//     }, 200);
+//   });
   
-  const $owlCarousel = $(".owl-carousel").owlCarousel({
-    items: 1,
-    loop: true,
-    nav: true,
-  });
+//   const $owlCarousel = $(".owl-carousel").owlCarousel({
+//     items: 1,
+//     loop: true,
+//     nav: false,
+//     dots: true,
+//     autoplay: true,
+//     autoplaySpeed: 1000,
+//     smartSpeed: 1500,
+//     autoplayHoverPause: true,
+ 
+//   });
   
-  $owlCarousel.on("changed.owl.carousel", e => {
-    $(".owl-slide-animated").removeClass("is-transitioned");
+//   $owlCarousel.on("changed.owl.carousel", e => {
+//     $(".owl-slide-animated").removeClass("is-transitioned");
   
-    const $currentOwlItem = $(".owl-item").eq(e.item.index);
-    $currentOwlItem.find(".owl-slide-animated").addClass("is-transitioned");
+//     const $currentOwlItem = $(".owl-item").eq(e.item.index);
+//     $currentOwlItem.find(".owl-slide-animated").addClass("is-transitioned");
   
-    const $target = $currentOwlItem.find(".owl-slide-text");
-    doDotsCalculations($target);
-  });
+//     const $target = $currentOwlItem.find(".owl-slide-text");
+//     doDotsCalculations($target);
+//   });
   
-  $owlCarousel.on("resize.owl.carousel", () => {
-    setTimeout(() => {
-      setOwlDotsPosition();
-    }, 50);
-  });
+//   $owlCarousel.on("resize.owl.carousel", () => {
+//     setTimeout(() => {
+//       setOwlDotsPosition();
+//     }, 50);
+//   });
   
-  /*if there isn't content underneath the carousel*/
-  // $owlCarousel.trigger("refresh.owl.carousel");
+//   /*if there isn't content underneath the carousel*/
+//   // $owlCarousel.trigger("refresh.owl.carousel");
   
-  setOwlDotsPosition();
+//   setOwlDotsPosition();
   
-  function setOwlDotsPosition() {
-    const $target = $(".owl-item.active .owl-slide-text");
-    doDotsCalculations($target);
-  }
+//   function setOwlDotsPosition() {
+//     const $target = $(".owl-item.active .owl-slide-text");
+//     doDotsCalculations($target);
+//   }
   
-  function doDotsCalculations(el) {
-    const height = el.height();
-    const {top, left} = el.position();
-    const res = height + top + 100;
+//   function doDotsCalculations(el) {
+//     const height = el.height();
+//     const {top, left} = el.position();
+//     const res = height + top + 100;
   
-    $(".owl-carousel .owl-dots").css({
-      top: `${res}px`,
-      left: `${left}px`
-    });
-  }
+//     $(".owl-carousel .owl-dots").css({
+//       top: `${res}px`,
+//       left: `${left}px`
+//     });
+//   }
   
+
 

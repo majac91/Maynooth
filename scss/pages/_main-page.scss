@@ -11,10 +11,3 @@
     min-height: 100vh;
 }
 
-#header {
-    .owl-slide-text {
-        button {
-            @include btn-pink;
-        }
-    }
-}

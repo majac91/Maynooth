@@ -79,6 +79,13 @@ p {
         transition: 0.4s ease;
         cursor: pointer; }
 
+.slide {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .slide-1 {
   background-image: url(../img/homepage/homepage_headerimage_01@2x.png); }
 
@@ -86,7 +93,8 @@ p {
   background-image: url(../img/homepage/livingroom_coffeetables_image@2x.png); }
 
 .slide-3 {
-  background-image: url(../img/homepage/homepage_headerimage_02@2x.png); }
+  background-image: url(../img/sofa/sofa1@2x.png);
+  background-position: top; }
 
 .owl-dots {
   width: 100%;
@@ -113,6 +121,7 @@ footer {
 
 #footer {
   justify-content: space-between;
+  flex-wrap: wrap;
   flex: 0 0 18%;
   padding: 3rem 0 4rem 0; }
 
@@ -134,6 +143,15 @@ footer {
   .arrow img {
     animation: up 2s infinite; }
 
+@media screen and (max-width: 768px) {
+  .list-caption {
+    padding-top: 3rem; }
+
+  .footer-logo {
+    padding-top: 3rem; }
+
+  .socials {
+    padding-top: 1rem; } }
 .top-navbar {
   background: #B17364;
   height: 6rem; }

@@ -12,6 +12,7 @@ footer {
 
 #footer {
     justify-content: space-between;
+    flex-wrap: wrap;
     flex: 0 0 18%;
     padding: 3rem 0 4rem 0;
 }
@@ -42,3 +43,18 @@ footer {
     }
 }
 
+
+@media screen and (max-width: 768px) {
+
+    .list-caption {
+        padding-top: 3rem;
+    }
+    .footer-logo {
+        padding-top: 3rem;
+    
+    }
+    .socials {
+        padding-top: 1rem;
+    }
+
+}

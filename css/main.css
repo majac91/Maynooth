@@ -32,16 +32,24 @@ hgroup {
 section {
   color: #000000; }
 
-p {
-  font-size: 1.8rem; }
-
 .main-heading {
-  font-size: 3rem;
+  font-size: 4.5rem;
   color: #FFFFFF; }
+
+.sub-heading {
+  font-size: 2.2rem;
+  padding-top: 3rem; }
 
 .text-white {
   color: white; }
 
+@media screen and (max-width: 575px) {
+  .main-heading {
+    font-size: 3rem;
+    color: #FFFFFF; }
+
+  .sub-heading {
+    font-size: 1.6rem; } }
 .owl-carousel {
   width: 100%;
   height: 100vh; }
@@ -87,13 +95,13 @@ p {
   background-repeat: no-repeat; }
 
 .slide-1 {
-  background-image: url(../img/homepage/homepage_headerimage_01@2x.png); }
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../img/homepage/homepage_headerimage_01@2x.png); }
 
 .slide-2 {
-  background-image: url(../img/homepage/livingroom_coffeetables_image@2x.png); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../img/homepage/livingroom_coffeetables_image@2x.png); }
 
 .slide-3 {
-  background-image: url(../img/sofa/sofa1@2x.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../img/sofa/sofa1@2x.png);
   background-position: top; }
 
 .owl-dots {

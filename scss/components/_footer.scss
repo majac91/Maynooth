@@ -1,0 +1,44 @@
+footer {
+    background: $nav;
+    .col {
+        li {
+            font-size: 1.7rem;
+            a {
+                color: white;
+            }
+        }
+    }
+}
+
+#footer {
+    justify-content: space-between;
+    flex: 0 0 18%;
+    padding: 3rem 0 4rem 0;
+}
+
+.list-caption {
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-logo {
+    padding-top: 3rem;
+
+}
+
+.socials {
+    .fab {
+        font-size: 2rem;
+        color: white;
+        margin-right: .6rem;
+    }
+}
+
+.arrow {
+    align-self: flex-end;
+    img {
+        animation: up 2s infinite;
+    }
+}
+

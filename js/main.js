@@ -16,7 +16,7 @@ $(document).ready(function () {
    nav: false,
    dots: true,
    autoplay: true,
-   autoplaySpeed: 1000,
+   autoplaySpeed: 2000,
    smartSpeed: 1500,
    autoplayHoverPause: true,
 

@@ -18,7 +18,8 @@ $(document).ready(function () {
    autoplay: true,
    autoplaySpeed: 2000,
    smartSpeed: 1500,
-   autoplayHoverPause: true,
+  //  autoplayHoverPause: true,
+   touchDrag: true
 
   });
 });

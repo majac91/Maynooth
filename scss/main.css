@@ -72,6 +72,10 @@ section {
   .sub-heading {
     font-size: 1.6rem;
   }
+  .img-fluid {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .owl-carousel {
@@ -85,15 +89,6 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.owl-carousel .slide::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
 }
 
 .owl-carousel .slide-content {
@@ -122,14 +117,6 @@ section {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   cursor: pointer;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .slide-1 {
@@ -366,6 +353,55 @@ footer .col li a {
 
 .main-header-text {
   min-height: 100vh;
+}
+
+.section-text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: section-text;
+}
+
+.homepage-main .odd-row {
+  height: 70vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% auto;
+      grid-template-columns: 60% auto;
+  grid-gap: 30px;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'section-text img';
+}
+
+.homepage-main .odd-row:nth-child(1) .img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  background-image: url(../img/homepage/inspirationideas_01.png);
+}
+
+.homepage-main .odd-row:nth-child(3) .img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  background-image: url(../img/homepage/clerancedeals_01.png);
+}
+
+.homepage-main .even-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 60%;
+      grid-template-columns: auto 60%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'img section-text';
+}
+
+.homepage-main .even-row .img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  background-image: url(../img/homepage/newinstore_01.png);
 }
 
 .center {

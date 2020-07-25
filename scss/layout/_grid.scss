@@ -1,0 +1,49 @@
+
+.section-text {
+    grid-area: section-text;
+}
+
+.homepage-main {
+
+    .odd-row  {
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 60% auto;
+        grid-gap: 30px;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'section-text img';
+        &:nth-child(1) {        //first row
+            .img {
+                grid-area: img;
+                background-image: url(../img/homepage/inspirationideas_01.png); 
+            }
+        }
+        &:nth-child(3) {        //third row
+            .img {
+                grid-area: img;
+                background-image: url(../img/homepage/clerancedeals_01.png); 
+            }
+        }
+    }
+
+    .even-row  {                //second row
+        display: grid;
+        grid-template-columns: auto 60%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        'img section-text';
+        .img {
+            grid-area: img;
+            background-image: url(../img/homepage/newinstore_01.png); 
+        }
+    }
+}
+
+
+
+
+
+
+
+

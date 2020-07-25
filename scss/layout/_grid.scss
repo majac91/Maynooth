@@ -1,7 +1,22 @@
 
 .section-text {
     grid-area: section-text;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.odd-row > .section-text {
+    align-items: flex-end;
+}
+
+.even-row > .section-text {
+    align-items: flex-start;
+}
+
+
+
 
 .homepage-main {
 
@@ -26,7 +41,6 @@
             }
         }
     }
-
     .even-row  {                //second row
         display: grid;
         grid-template-columns: auto 60%;
@@ -36,7 +50,15 @@
         .img {
             grid-area: img;
             background-image: url(../img/homepage/newinstore_01.png); 
+            background-position: top;
         }
+    }
+    [class*='-row'] {
+        height: 70vh;
+        background: no-repeat cover center;
+    }
+    button {
+        @include btn-pink;
     }
 }
 

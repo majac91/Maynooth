@@ -7,58 +7,126 @@
     align-items: center;
 }
 
-.odd-row > .section-text {
+.homepage-main > .odd-row > .section-text {
     align-items: flex-end;
+    text-align: right;
 }
 
-.even-row > .section-text {
+.homepage-main > .even-row > .section-text {
     align-items: flex-start;
+    text-align: left;
 }
 
+
+.livingroom-main > .odd-row > .section-text {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.livingroom-main > .even-row > .section-text {
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+.img {
+    background-size: cover;
+    background-position: center;
+}
 
 
 
 .homepage-main {
-
     .odd-row  {
-        height: 70vh;
         display: grid;
-        grid-template-columns: 60% auto;
-        grid-gap: 30px;
+        grid-template-columns: 20% auto 30%;
+        grid-gap: 40px;
         grid-template-rows: 1fr;
         grid-template-areas: 
-        'section-text img';
-        &:nth-child(1) {        //first row
+        'empty section-text img';
+        &:nth-child(1) {        //row 1
             .img {
                 grid-area: img;
                 background-image: url(../img/homepage/inspirationideas_01.png); 
             }
         }
-        &:nth-child(3) {        //third row
+        &:nth-child(3) {        //row 3
             .img {
                 grid-area: img;
                 background-image: url(../img/homepage/clerancedeals_01.png); 
             }
         }
     }
-    .even-row  {                //second row
+    .even-row  {                //row 2
         display: grid;
-        grid-template-columns: auto 60%;
+        grid-template-columns: 30% auto 20%;
         grid-template-rows: 1fr;
+        grid-gap: 30px;
         grid-template-areas: 
-        'img section-text';
+        'img section-text empty';
         .img {
             grid-area: img;
             background-image: url(../img/homepage/newinstore_01.png); 
-            background-position: top;
         }
     }
     [class*='-row'] {
-        height: 70vh;
-        background: no-repeat cover center;
+        height: 60vh;
     }
     button {
         @include btn-pink;
+    }
+}
+
+.livingroom-main {
+    @extend .homepage-main;
+    
+    .odd-row {
+        grid-template-columns: 30% auto 20%;
+        grid-template-areas: 
+        'img section-text empty';
+
+        &:nth-child(1) {        //row 1
+            .img {
+                grid-area: img;
+                background-image: url(../img/homepage/newinstore_03.png); 
+            }
+        }
+        &:nth-child(3) {        //row 3
+            .img {
+                grid-area: img;
+                background-image: url(../img/homepage/livingroom_armchairs_image.png); 
+            }
+        }
+        &:nth-child(5) {        //row 5
+            .img {
+                grid-area: img;
+                background-image: url(../img/livingroom/livingroom_lightining_image.png); 
+            }
+        }
+    }
+    .even-row {
+        grid-template-columns: 20% auto 30%;
+        grid-template-areas: 
+        'empty section-text img';
+
+        &:nth-child(2) {        //row 2
+            .img {
+                grid-area: img;
+                background-image: url(../img/livingroom/livingroom_inspiration_image.png); 
+            }
+        }
+        &:nth-child(4) {        //row 4
+            .img {
+                grid-area: img;
+                background-image: url(../img/homepage/inspirationideas_02.png); 
+            }
+        }
+        &:nth-child(6) {        //row 4
+            .img {
+                grid-area: img;
+                background-image: url(../img/homepage/inspirationideas_03.png); 
+            }
+        }
     }
 }
 
@@ -66,6 +134,26 @@
 
 
 
+
+@media screen and (max-width: 768px) {
+    .homepage-main {
+        .section-text {
+            padding-top: 40px;
+        }
+        .odd-row, 
+        .even-row   {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows:  1fr 7fr;
+            grid-template-areas: 
+            'section-text'
+            'img';
+        }
+        [class*='-row'] {
+            height: 100vh;
+        }
+    }
+}
 
 
 

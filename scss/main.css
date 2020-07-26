@@ -29,14 +29,6 @@ li {
   height: 100%;
 }
 
-.divider-top {
-  padding-top: 80px;
-}
-
-.divider-bottom {
-  padding-bottom: 80px;
-}
-
 body {
   font-family: "Quattrocento Sans", regular;
   font-weight: 400;
@@ -56,17 +48,23 @@ section {
 }
 
 .main-heading {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   color: #FFFFFF;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .sub-heading {
   font-size: 2.2rem;
   padding-top: 3rem;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
 }
 
 .text-white {
-  color: white;
+  color: #FFFFFF;
+}
+
+.text-dark {
+  color: #000000;
 }
 
 .section-heading {
@@ -75,6 +73,14 @@ section {
 
 .section-p {
   font-size: 1.9rem;
+}
+
+.divider-top {
+  margin-top: 80px;
+}
+
+.divider-bottom {
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 768px) {
@@ -111,7 +117,8 @@ section {
 .owl-carousel .slide-content button {
   background: #C88770;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
   margin: 20px 0;
   border: none;
   border-radius: 5px;
@@ -129,8 +136,8 @@ section {
 }
 
 .slide-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.4))), url(../img/homepage/homepage_headerimage_01@2x.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../img/homepage/homepage_headerimage_01@2x.png);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(255, 255, 255, 0.1))), url(../img/homepage/homepage_headerimage_01@2x.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)), url(../img/homepage/homepage_headerimage_01@2x.png);
 }
 
 .slide-2 {
@@ -266,6 +273,10 @@ footer .col li a {
   display: none;
 }
 
+.livingroom-nav .bottom-navbar a {
+  color: #000000;
+}
+
 @media screen and (max-width: 768px) {
   .top-navbar {
     position: fixed;
@@ -332,10 +343,13 @@ footer .col li a {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+  .livingroom-nav .bottom-navbar a {
+    color: #FFFFFF;
+  }
 }
 
 .main-header {
-  background: url(/img/_homepage/homepage_headerimage_01.png) top no-repeat;
+  background: url(../img/_homepage/homepage_headerimage_01.png) top no-repeat;
   min-height: 90vh;
   overflow: hidden;
 }
@@ -343,7 +357,8 @@ footer .col li a {
 .main-header button {
   background: #C88770;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
   margin: 20px 0;
   border: none;
   border-radius: 5px;
@@ -362,6 +377,40 @@ footer .col li a {
 
 .main-header-text {
   min-height: 100vh;
+}
+
+.livingroom-header, .clearance {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(255, 255, 255, 0.1))), url(../img/livingroom/livingroom_heroimage.png) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)), url(../img/livingroom/livingroom_heroimage.png) no-repeat;
+  background-size: cover;
+  height: 70vh;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.livingroom-header button, .clearance button {
+  background: #000000;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  margin: 30px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.livingroom-header button:hover, .clearance button:hover {
+  background: #3B4B53;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.clearance {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/livingroom/livingroom_clerance_image.png) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/livingroom/livingroom_clerance_image.png) no-repeat;
+  height: 50vh;
 }
 
 .section-text {
@@ -466,7 +515,8 @@ footer .col li a {
 .homepage-main button, .livingroom-main button {
   background: #C88770;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
   margin: 20px 0;
   border: none;
   border-radius: 5px;
@@ -486,7 +536,7 @@ footer .col li a {
 .livingroom-main .odd-row {
   -ms-grid-columns: 30% auto 20%;
       grid-template-columns: 30% auto 20%;
-      grid-template-areas: 'img section-text empty';
+      grid-template-areas: 'img section-text 100px';
 }
 
 .livingroom-main .odd-row:nth-child(1) .img {

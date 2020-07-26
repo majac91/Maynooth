@@ -18,6 +18,10 @@ li {
   width: 80%;
   margin: auto; }
 
+.img-fluid {
+  max-width: 100%;
+  height: 100%; }
+
 body {
   font-family: "Quattrocento Sans", regular;
   font-weight: 400;
@@ -33,7 +37,7 @@ section {
   color: #000000; }
 
 .main-heading {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   color: #FFFFFF; }
 
 .sub-heading {
@@ -41,7 +45,10 @@ section {
   padding-top: 3rem; }
 
 .text-white {
-  color: white; }
+  color: #FFFFFF; }
+
+.text-dark {
+  color: #000000; }
 
 .section-heading {
   font-size: 3rem; }
@@ -49,7 +56,13 @@ section {
 .section-p {
   font-size: 1.9rem; }
 
-@media screen and (max-width: 575px) {
+.divider-top {
+  margin-top: 80px; }
+
+.divider-bottom {
+  margin-bottom: 80px; }
+
+@media screen and (max-width: 768px) {
   .main-heading {
     font-size: 3rem;
     color: #FFFFFF; }
@@ -179,6 +192,9 @@ footer {
 .menu-toggle {
   display: none; }
 
+.livingroom-nav .bottom-navbar a {
+  color: #000000; }
+
 @media screen and (max-width: 768px) {
   .top-navbar {
     position: fixed;
@@ -226,9 +242,31 @@ footer {
     .open .fa-bars {
       display: none; }
     .open .bottom-navbar {
-      transform: translateY(0); } }
+      transform: translateY(0); }
+
+  .livingroom-nav .bottom-navbar a {
+    color: #FFFFFF; } }
+.livingroom-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/livingroom/livingroom_heroimage.png);
+  height: 80vh; }
+  .livingroom-header button {
+    background: #C88770;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: 400; }
+    .livingroom-header button:hover {
+      background: #3B4B53;
+      transition: 0.4s ease;
+      cursor: pointer; }
+
 .main-header {
-  background: url(/img/_homepage/homepage_headerimage_01.png) top no-repeat;
+  background: url(../img/_homepage/homepage_headerimage_01.png) top no-repeat;
   min-height: 90vh;
   overflow: hidden; }
   .main-header button {
@@ -250,6 +288,109 @@ footer {
 .main-header-text {
   min-height: 100vh; }
 
+.section-text {
+  grid-area: section-text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.homepage-main > .odd-row > .section-text, .livingroom-main > .odd-row > .section-text {
+  align-items: flex-end;
+  text-align: right; }
+
+.homepage-main > .even-row > .section-text, .livingroom-main > .even-row > .section-text {
+  align-items: flex-start;
+  text-align: left; }
+
+.livingroom-main > .odd-row > .section-text {
+  align-items: flex-start;
+  text-align: left; }
+
+.livingroom-main > .even-row > .section-text {
+  align-items: flex-end;
+  text-align: right; }
+
+.img {
+  background-size: cover;
+  background-position: center; }
+
+.homepage-main .odd-row, .livingroom-main .odd-row {
+  display: grid;
+  grid-template-columns: 20% auto 30%;
+  grid-gap: 40px;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'empty section-text img'; }
+  .homepage-main .odd-row:nth-child(1) .img, .livingroom-main .odd-row:nth-child(1) .img {
+    grid-area: img;
+    background-image: url(../img/homepage/inspirationideas_01.png); }
+  .homepage-main .odd-row:nth-child(3) .img, .livingroom-main .odd-row:nth-child(3) .img {
+    grid-area: img;
+    background-image: url(../img/homepage/clerancedeals_01.png); }
+.homepage-main .even-row, .livingroom-main .even-row {
+  display: grid;
+  grid-template-columns: 30% auto 20%;
+  grid-template-rows: 1fr;
+  grid-gap: 30px;
+  grid-template-areas: 'img section-text empty'; }
+  .homepage-main .even-row .img, .livingroom-main .even-row .img {
+    grid-area: img;
+    background-image: url(../img/homepage/newinstore_01.png); }
+.homepage-main [class*='-row'], .livingroom-main [class*='-row'] {
+  height: 60vh; }
+.homepage-main button, .livingroom-main button {
+  background: #C88770;
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: 400; }
+  .homepage-main button:hover, .livingroom-main button:hover {
+    background: #3B4B53;
+    transition: 0.4s ease;
+    cursor: pointer; }
+
+.livingroom-main .odd-row {
+  grid-template-columns: 30% auto 20%;
+  grid-template-areas: 'img section-text empty'; }
+  .livingroom-main .odd-row:nth-child(1) .img {
+    grid-area: img;
+    background-image: url(../img/homepage/newinstore_03.png); }
+  .livingroom-main .odd-row:nth-child(3) .img {
+    grid-area: img;
+    background-image: url(../img/homepage/livingroom_armchairs_image.png); }
+  .livingroom-main .odd-row:nth-child(5) .img {
+    grid-area: img;
+    background-image: url(../img/livingroom/livingroom_lightining_image.png); }
+.livingroom-main .even-row {
+  grid-template-columns: 20% auto 30%;
+  grid-template-areas: 'empty section-text img'; }
+  .livingroom-main .even-row:nth-child(2) .img {
+    grid-area: img;
+    background-image: url(../img/livingroom/livingroom_inspiration_image.png); }
+  .livingroom-main .even-row:nth-child(4) .img {
+    grid-area: img;
+    background-image: url(../img/homepage/inspirationideas_02.png); }
+  .livingroom-main .even-row:nth-child(6) .img {
+    grid-area: img;
+    background-image: url(../img/homepage/inspirationideas_03.png); }
+
+@media screen and (max-width: 768px) {
+  .homepage-main .section-text, .livingroom-main .section-text {
+    padding-top: 40px; }
+  .homepage-main .odd-row, .livingroom-main .odd-row,
+  .homepage-main .even-row,
+  .livingroom-main .even-row {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 7fr;
+    grid-template-areas: 'section-text' 'img'; }
+  .homepage-main [class*='-row'], .livingroom-main [class*='-row'] {
+    height: 100vh; } }
 .center {
   display: flex;
   flex-direction: column;

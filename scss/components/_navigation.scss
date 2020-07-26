@@ -34,6 +34,14 @@
 }
 
 
+.livingroom-nav {
+    .bottom-navbar {
+        a {
+            color: $black;
+        }
+    }
+}
+
 @media screen and (max-width: 768px) {
     .top-navbar {
         position: fixed;
@@ -86,6 +94,14 @@
         }
         .bottom-navbar {
             transform: translateY(0);
+        }
+    }
+
+    .livingroom-nav {
+        .bottom-navbar {
+            a {
+                color: $white;
+            }
         }
     }
 }

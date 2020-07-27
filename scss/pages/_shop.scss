@@ -20,6 +20,16 @@
     }
 }
 
+aside {
+
+    @extend .product-description;
+    h4 {
+        font-weight: 600;
+    }
+    .specs {
+        text-align: left;
+    }
+}
 @media screen and (max-width: 768px) {
     .shop-product {
         flex-wrap: wrap;

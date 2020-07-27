@@ -35,3 +35,39 @@ aside {
         flex-wrap: wrap;
     }
 }
+
+.product-information {
+    background: $pink;
+
+    .product-p {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 3rem;
+        h2 {
+            font-size: 3rem;
+        }
+        p {
+            padding-top: 1.8rem;
+        }
+    }
+    .product-img {
+        flex: 3;
+        background-image: url(../img/sofa/sofa_product-information_image.png);
+        min-height: 50vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+}
+
+.sum-collection {
+    @extend .product-information;
+    background: $gray;
+    .product-img {
+        background-image: url(../img/sofa/sofa_sum-colection_image.png);
+    }
+
+}

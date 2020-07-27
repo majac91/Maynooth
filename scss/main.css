@@ -68,7 +68,7 @@ section {
 }
 
 .section-heading {
-  font-size: 3rem;
+  font-size: 3.3rem;
 }
 
 .section-p {
@@ -81,6 +81,10 @@ section {
 
 .divider-bottom {
   margin-bottom: 80px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
@@ -174,6 +178,11 @@ section {
 
 .slider-bg, .slider-sm {
   outline: none;
+}
+
+.slider-container {
+  max-width: 70rem;
+  padding-right: 40px;
 }
 
 .slider-bg .img {
@@ -421,6 +430,58 @@ footer .col li a {
 
 .main-header-text {
   min-height: 100vh;
+}
+
+.product-description {
+  text-align: right;
+}
+
+.product-description h2 {
+  font-weight: 500;
+}
+
+.product-description h3 {
+  font-size: 2.3rem;
+}
+
+.product-description h4 {
+  font-size: 1.7rem;
+}
+
+.product-description p {
+  font-size: 1.5rem;
+}
+
+.product-description .price {
+  font-size: 2.4rem;
+}
+
+.product-description button {
+  background: #C88770;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.product-description button:hover {
+  background: #3B4B53;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .shop-product {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .livingroom-header, .clearance {

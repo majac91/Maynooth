@@ -195,6 +195,7 @@ section {
   padding: 0;
   width: 100%;
   height: 100%;
+  cursor: pointer;
 }
 
 .slick-next.slick-arrow, .slick-prev.slick-arrow {
@@ -207,11 +208,13 @@ section {
   background: url(../img/icon_arrow_back.png) no-repeat;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
+  cursor: pointer;
 }
 
 .slick-prev.slick-arrow {
   -webkit-transform: none;
           transform: none;
+  cursor: pointer;
 }
 
 .slick-prev.slick-arrow {
@@ -532,6 +535,29 @@ aside .specs {
   min-height: 50vh;
   width: 100%;
   background-size: cover;
+  background-position: center;
+}
+
+.goes-great {
+  text-align: center;
+}
+
+.goes-great h2 {
+  padding-bottom: 50px;
+}
+
+.goes-great .goes-great-img img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+}
+
+.goes-great .img-bg {
+  background: url(../img/sofa/sofa_big-image.png);
+  background-size: conver;
+  background-position: center;
+  height: 70vh;
+  width: 100%;
 }
 
 .sum-collection {

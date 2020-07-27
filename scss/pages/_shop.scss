@@ -30,6 +30,7 @@ aside {
         text-align: left;
     }
 }
+
 @media screen and (max-width: 768px) {
     .shop-product {
         flex-wrap: wrap;
@@ -59,9 +60,31 @@ aside {
         min-height: 50vh;
         width: 100%;
         background-size: cover;
+        background-position: center;
     }
-
 }
+
+.goes-great {
+    text-align: center;
+    h2 {
+        padding-bottom: 50px;
+    }
+    .goes-great-img {
+        img {
+            flex: 0 0 32%;
+
+        }
+    }
+    .img-bg {
+        background: url(../img/sofa/sofa_big-image.png);
+        background-size: conver;
+        background-position: center;;
+        height: 70vh;
+        width: 100%;
+
+    }
+}
+
 
 .sum-collection {
     @extend .product-information;

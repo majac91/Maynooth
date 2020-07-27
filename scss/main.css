@@ -172,6 +172,50 @@ section {
   }
 }
 
+.slider-bg, .slider-sm {
+  outline: none;
+}
+
+.slider-bg .img {
+  outline: none;
+  height: 30vw;
+}
+
+.slider-sm .img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slick-next.slick-arrow, .slick-prev.slick-arrow {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  color: transparent;
+  border: none;
+  background: url(../img/icon_arrow_back.png) no-repeat;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.slick-prev.slick-arrow {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.slick-prev.slick-arrow {
+  position: absolute;
+  bottom: 44%;
+  left: 0;
+  z-index: 1;
+}
+
+.slick-list.draggable {
+  padding: 0 !important;
+}
+
 footer {
   background: #B17364;
 }

@@ -28,3 +28,42 @@ $(document).ready(function () {
 });
 
 
+// $('.slider-bg').slick({
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   arrows: true,
+//   fade: true,
+//   // autoplay: true,
+//   autoplaySpeed: 4000,
+//   asNavFor: '.slider-sm'
+// });
+// $('.slider-sm').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   asNavFor: '.slider-bg',
+//   arrows: true,
+//   dots: false,
+//   centerMode: true,
+//   focusOnSelect: true,
+//   infinite: true,
+// });
+
+
+
+
+$('.slider-bg').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: true,
+  fade: true,
+  asNavFor: '.slider-sm'
+});
+$('.slider-sm').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-bg',
+  arrows: false,
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});

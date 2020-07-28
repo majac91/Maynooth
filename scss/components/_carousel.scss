@@ -38,22 +38,7 @@
     bottom: 20%;
 }
 
-@media screen and (max-width: 575px) {
-    .owl-carousel {
-        top: 6rem;
-        z-index: -1;
-        
-    }
-    .owl-carousel .owl-nav {
-      top: 5%;
-    }
-    .open {
-        .slide {
-            filter: blur(12px);
 
-        }
-    }
-  }
 
   .slider-bg, .slider-sm {
     outline: none;
@@ -109,3 +94,51 @@
     padding: 0!important;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .owl-carousel {
+        top: 6rem;
+        z-index: -1;
+        
+    }
+    .owl-carousel .owl-nav {
+      top: 5%;
+    }
+    .open {
+        .slide,
+        .shop,
+        .living-room {
+            filter: blur(12px);
+
+        }
+    }
+
+
+
+    .slider-bg, .slider-sm {
+        outline: none;
+      }
+
+      .shop-product.container-bg {
+          width: 100%;
+          .slider-container {
+            padding: 50px 20px;
+            width: 100%;
+          }
+
+      }
+    
+
+    
+      .slider-bg .img{
+        outline: none;
+        height:30vw;
+      }
+
+      .slick-prev.slick-arrow {
+          height: 100%;
+      }
+
+
+  }

@@ -1,32 +1,127 @@
 
+// .contact {
+//     background: linear-gradient(to right, rgba(0, 0, 0 ,.3), rgba(255, 255, 255,.1)),  url(../img/contactus/contactus_image.png);
+//     min-height: 100vh;
+
+//     hgroup {
+//         position: relative;
+//         left: 0;
+//         top: 10rem;
+//         h2 {
+//             font-size: 2.8rem;
+//         }
+//     }
+
+//     form {                  //inputs
+//         min-height: 50vh;
+//         position: relative;
+//         left: 0;
+//         top: 15rem;
+//         align-self: flex-end;
+
+//         input {
+//             display: block;
+//             background: transparent;
+//             border: none;
+//             border-bottom: 2px solid $gray;
+//             width: 40rem;
+//             margin-bottom: 5rem;
+//             color: white;
+//             font-size: 2rem;
+//             &:last-child {
+//                 margin-bottom: 0;
+//             }
+//         }
+    
+    
+//         &:nth-child(2) {    //text-area
+//             display: flex;
+//             align-items: flex-end;
+//             flex-direction: column;
+//             textarea {
+//                 min-height: 10rem;
+//                 width: 40rem;
+//                 align-self: baseline;
+//             }
+
+//         }
+    
+//     }
+
+//     button {
+//         @include btn-pink;
+//         position: relative;
+//         left: 10%;
+//         bottom: 40%;
+//     }
+// }
+
 .contact {
-    background: url(../img/contactus/contactus_image.png);
-    min-height: 100vh;
-
-
+    background: linear-gradient(to right, rgba(0, 0, 0 ,.3), rgba(0,0,0,.3)),  url(../img/contactus/contactus_image.png);
+    min-height: 90vh;
 }
-form {                  //inputs
-    min-height: 40vh;
-    padding: 10rem 0;
-    margin: auto;
-    label {
-        h1 {
 
-        }
-
+.contact-grid {
+    padding-top: 15%;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 10% auto 5%;
+    grid-template-areas: 
+    'hgroup empty'
+    'inputs message'  
+    '100px button';
+    hgroup {
+        grid-area: hgroup;
+        margin-bottom: 4rem;
         h2 {
+            font-size: 2.5rem;
+        }
+    }
+    .inputs {
+        grid-area: inputs;
+
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 2rem;
+            border: none;
+            border-bottom: 2px solid $white;
+            width: 50rem;
+            font-size: 2.2rem;
+            color: white;
+            padding-bottom: 1.5rem;
+            background: transparent;
+            &:last-child {
+                margin-bottom: 0;
+            }
 
         }
     }
-    input {
-        display: block;
+    .message {
+        grid-area: message;
+        textarea {
+            height: 100%;
+            width: 100%;
+            background-color: transparentize($color: $white, $amount: .7);
+            font-size: 2.2rem;
+            color: white;
+            padding: 1.5rem;
+            border: none;
+            font-family: "Quattrocento Sans", regular;
+            &:active,
+            &:focus {
+                border: 2px solid white;
+    
+            }
+        }
     }
-
-
-    &:nth-child(2) {    //text-area
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
+    button {
+        grid-area: button;
+        justify-self: flex-end;
+        @include btn-pink;
+        
     }
-
 }
+
+
+

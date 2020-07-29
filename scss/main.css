@@ -248,6 +248,9 @@ section {
 }
 
 footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
   background: #B17364;
 }
 
@@ -424,31 +427,100 @@ footer .col li a {
 }
 
 .contact {
-  background: url(../img/contactus/contactus_image.png);
-  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/contactus/contactus_image.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/contactus/contactus_image.png);
+  min-height: 90vh;
 }
 
-form {
-  min-height: 40vh;
-  padding: 10rem 0;
-  margin: auto;
+.contact-grid {
+  padding-top: 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% auto;
+      grid-template-columns: 60% auto;
+  -ms-grid-rows: 10% auto 5%;
+      grid-template-rows: 10% auto 5%;
+      grid-template-areas: 'hgroup empty' 'inputs message'   '100px button';
 }
 
-form input {
+.contact-grid hgroup {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hgroup;
+  margin-bottom: 4rem;
+}
+
+.contact-grid hgroup h2 {
+  font-size: 2.5rem;
+}
+
+.contact-grid .inputs {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: inputs;
+}
+
+.contact-grid .inputs input {
   display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  width: 50rem;
+  font-size: 2.2rem;
+  color: white;
+  padding-bottom: 1.5rem;
+  background: transparent;
 }
 
-form:nth-child(2) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.contact-grid .inputs input:last-child {
+  margin-bottom: 0;
+}
+
+.contact-grid .message {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: message;
+}
+
+.contact-grid .message textarea {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 2.2rem;
+  color: white;
+  padding: 1.5rem;
+  border: none;
+  font-family: "Quattrocento Sans", regular;
+}
+
+.contact-grid .message textarea:active, .contact-grid .message textarea:focus {
+  border: 2px solid white;
+}
+
+.contact-grid button {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: button;
+  justify-self: flex-end;
+  background: #C88770;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.contact-grid button:hover {
+  background: #3B4B53;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  cursor: pointer;
 }
 
 .main-header {

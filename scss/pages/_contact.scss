@@ -124,4 +124,31 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .contact-grid {
+        padding-top: 15%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        'hgroup'
+        'inputs'
+        'message'  
+        'button';
+        hgroup {
+            padding-top: 4rem;
+        }
+        .inputs {
+            padding-bottom: 2rem;
+            input {
+                width: 100%;
+
+            }
+        }
+        button {
+            height: 4rem;
+        }
+    }
+}
+
 

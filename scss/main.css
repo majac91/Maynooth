@@ -348,7 +348,7 @@ footer .col li a {
   display: none;
 }
 
-.livingroom-nav .bottom-navbar a {
+.dark-nav .bottom-navbar a {
   color: #000000;
 }
 
@@ -421,6 +421,34 @@ footer .col li a {
   .livingroom-nav .bottom-navbar a {
     color: #FFFFFF;
   }
+}
+
+.contact {
+  background: url(../img/contactus/contactus_image.png);
+  min-height: 100vh;
+}
+
+form {
+  min-height: 40vh;
+  padding: 10rem 0;
+  margin: auto;
+}
+
+form input {
+  display: block;
+}
+
+form:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-header {

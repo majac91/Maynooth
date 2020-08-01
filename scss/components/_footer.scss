@@ -48,16 +48,25 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-
-    .list-caption {
-        padding-top: 3rem;
-    }
-    .footer-logo {
-        padding-top: 3rem;
+    #footer {
+        justify-content: space-between;
+        .col {
+            padding-right: 10px;
+        }
+        .footer-logo {
+            padding-top: 3rem;
+        
+        }
+        .socials {
+            padding-top: 1rem;
+        }
+        .arrow {
+            padding-top: 2rem;
     
+        }
     }
-    .socials {
-        padding-top: 1rem;
-    }
-
 }
+
+
+
+

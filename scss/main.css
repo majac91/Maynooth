@@ -301,14 +301,22 @@ footer .col li a {
 }
 
 @media screen and (max-width: 768px) {
-  .list-caption {
+  #footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #footer .col {
+    padding-right: 10px;
+  }
+  #footer .footer-logo {
     padding-top: 3rem;
   }
-  .footer-logo {
-    padding-top: 3rem;
-  }
-  .socials {
+  #footer .socials {
     padding-top: 1rem;
+  }
+  #footer .arrow {
+    padding-top: 2rem;
   }
 }
 
@@ -355,7 +363,7 @@ footer .col li a {
   color: #000000;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1084px) {
   .top-navbar {
     position: fixed;
     top: 0;
@@ -523,7 +531,7 @@ footer .col li a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1098px) {
   .contact-grid {
     padding-top: 15%;
     display: -ms-grid;

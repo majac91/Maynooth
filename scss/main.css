@@ -109,6 +109,12 @@ section {
   .section-p {
     font-size: 1.7rem;
   }
+  .divider-top {
+    margin-top: 50px;
+  }
+  .divider-bottom {
+    margin-bottom: 50px;
+  }
 }
 
 .owl-carousel {
@@ -156,6 +162,7 @@ section {
 @media screen and (max-width: 768px) {
   .owl-carousel .slide-content button {
     font-size: 1.3rem;
+    margin: 15px 0;
   }
 }
 
@@ -179,7 +186,7 @@ section {
   width: 100%;
   text-align: center;
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
 }
 
 .slider-bg, .slider-sm {
@@ -242,12 +249,6 @@ section {
   .owl-carousel .owl-nav {
     top: 5%;
   }
-  .open .slide,
-  .open .shop,
-  .open .living-room {
-    -webkit-filter: blur(12px);
-            filter: blur(12px);
-  }
   .slider-bg, .slider-sm {
     outline: none;
   }
@@ -264,6 +265,15 @@ section {
   }
   .slick-prev.slick-arrow {
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider-container {
+    margin: 70px 0 -20px 0;
+  }
+  .shop-product.container-bg .slider-container {
+    padding: 0 20px;
   }
 }
 
@@ -386,17 +396,13 @@ footer .col:nth-child(4) ul li:nth-child(3) {
   display: none;
 }
 
-.dark-nav .bottom-navbar a {
-  color: #000000;
-}
-
 @media screen and (max-width: 1084px) {
   .top-navbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
   }
   .top-navbar .menu-toggle {
     color: white;
@@ -423,8 +429,8 @@ footer .col:nth-child(4) ul li:nth-child(3) {
     top: 6rem;
     left: 0;
     width: 100%;
-    height: 80vh;
-    background-color: rgba(177, 115, 100, 0.5);
+    height: 90vh;
+    background-color: rgba(177, 115, 100, 0.7);
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%);
     -webkit-transition: -webkit-transform .5s;
@@ -432,6 +438,12 @@ footer .col:nth-child(4) ul li:nth-child(3) {
     transition: transform .5s;
     transition: transform .5s, -webkit-transform .5s;
     z-index: 300;
+  }
+  .top-navbar .bottom-navbar a {
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  }
+  .top-navbar .bottom-navbar.text-dark a {
+    color: white;
   }
   .top-navbar > .space-between {
     height: calc(100vh-6rem);
@@ -456,8 +468,13 @@ footer .col:nth-child(4) ul li:nth-child(3) {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
-  .livingroom-nav .bottom-navbar a {
-    color: #FFFFFF;
+  .open .slide,
+  .open .shop,
+  .open .owl-dots,
+  .open section,
+  .open footer {
+    -webkit-filter: blur(20px);
+            filter: blur(20px);
   }
 }
 
@@ -562,6 +579,7 @@ footer .col:nth-child(4) ul li:nth-child(3) {
 @media screen and (max-width: 768px) {
   .contact-grid button {
     font-size: 1.3rem;
+    margin: 15px 0;
   }
 }
 
@@ -620,11 +638,16 @@ footer .col:nth-child(4) ul li:nth-child(3) {
 @media screen and (max-width: 768px) {
   .main-header button {
     font-size: 1.3rem;
+    margin: 15px 0;
   }
 }
 
 .main-header-text {
   min-height: 100vh;
+}
+
+.bottom-navbar.text-dark a {
+  color: black;
 }
 
 .product-description, aside {
@@ -675,6 +698,7 @@ footer .col:nth-child(4) ul li:nth-child(3) {
 @media screen and (max-width: 768px) {
   .product-description button, aside button {
     font-size: 1.3rem;
+    margin: 15px 0;
   }
 }
 
@@ -684,13 +708,6 @@ aside h4 {
 
 aside .specs {
   text-align: left;
-}
-
-@media screen and (max-width: 768px) {
-  .shop-product {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 .product-information, .sum-collection {
@@ -766,6 +783,58 @@ aside .specs {
   background-image: url(../img/sofa/sofa_sum-colection_image.png);
 }
 
+@media screen and (max-width: 768px) {
+  .product-description h3, aside h3 {
+    font-size: 2rem;
+  }
+  .product-description h4, aside h4 {
+    font-size: 1.5rem;
+  }
+  .product-description p, aside p {
+    font-size: 1.4rem;
+  }
+  .product-description .price, aside .price {
+    font-size: 2rem;
+  }
+  .shop-product {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  aside {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  aside .production {
+    text-align: left;
+    margin-top: 20px;
+  }
+  .product-information, .sum-collection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .product-information .product-p, .sum-collection .product-p {
+    min-width: 320px;
+  }
+  .product-information .product-p .section-heading, .sum-collection .product-p .section-heading {
+    font-size: 2.7rem;
+  }
+  .goes-great .goes-great-img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .goes-great .goes-great-img img {
+    min-width: 100%;
+    padding-bottom: 30px;
+  }
+  .goes-great .goes-great-img img:last-child {
+    padding-bottom: 0;
+  }
+  .goes-great .img-bg {
+    display: none;
+  }
+}
+
 .livingroom-header, .clearance {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(255, 255, 255, 0.1))), url(../img/livingroom/livingroom_heroimage.png) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)), url(../img/livingroom/livingroom_heroimage.png) no-repeat;
@@ -797,6 +866,7 @@ aside .specs {
 @media screen and (max-width: 768px) {
   .livingroom-header button, .clearance button {
     font-size: 1.3rem;
+    margin: 15px 0;
   }
 }
 
@@ -807,6 +877,9 @@ aside .specs {
 }
 
 @media screen and (max-width: 375px) {
+  .livingroom-header.divider-top, .divider-top.clearance {
+    margin-top: 80px;
+  }
   .livingroom-main.divider-top {
     margin-top: 0;
   }
@@ -941,6 +1014,7 @@ aside .specs {
 @media screen and (max-width: 768px) {
   .homepage-main button, .livingroom-main button {
     font-size: 1.3rem;
+    margin: 15px 0;
   }
 }
 

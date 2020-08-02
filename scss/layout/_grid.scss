@@ -34,8 +34,7 @@
     background-position: center;
 }
 
-
-
+//Main page
 .homepage-main {
     .odd-row  {
         display: grid;
@@ -76,7 +75,7 @@
         @include btn-pink;
     }
 }
-
+//Living room 
 .livingroom-main {
     @extend .homepage-main;
     

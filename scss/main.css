@@ -51,6 +51,7 @@ section {
   font-size: 5.5rem;
   color: #FFFFFF;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 0 10px;
 }
 
 .sub-heading {
@@ -69,6 +70,7 @@ section {
 
 .section-heading {
   font-size: 3.3rem;
+  padding-bottom: 1rem;
 }
 
 .section-p {
@@ -89,11 +91,17 @@ section {
 
 @media screen and (max-width: 768px) {
   .main-heading {
-    font-size: 3rem;
+    font-size: 3.4rem;
     color: #FFFFFF;
   }
   .sub-heading {
     font-size: 1.6rem;
+  }
+  .section-heading {
+    font-size: 2.7rem;
+  }
+  .section-p {
+    font-size: 1.7rem;
   }
 }
 
@@ -137,6 +145,12 @@ section {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .owl-carousel .slide-content button {
+    font-size: 1.3rem;
+  }
 }
 
 .slide-1 {
@@ -455,11 +469,12 @@ footer .col li a {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: hgroup;
-  margin-bottom: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-grid hgroup h2 {
   font-size: 2.5rem;
+  margin-top: 3rem;
 }
 
 .contact-grid .inputs {
@@ -531,6 +546,12 @@ footer .col li a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-grid button {
+    font-size: 1.3rem;
+  }
+}
+
 @media screen and (max-width: 1098px) {
   .contact-grid {
     padding-top: 15%;
@@ -583,6 +604,12 @@ footer .col li a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .main-header button {
+    font-size: 1.3rem;
+  }
+}
+
 .main-header-text {
   min-height: 100vh;
 }
@@ -630,6 +657,12 @@ footer .col li a {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .product-description button, aside button {
+    font-size: 1.3rem;
+  }
 }
 
 aside h4 {
@@ -748,10 +781,31 @@ aside .specs {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .livingroom-header button, .clearance button {
+    font-size: 1.3rem;
+  }
+}
+
 .clearance {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../img/livingroom/livingroom_clerance_image.png) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/livingroom/livingroom_clerance_image.png) no-repeat;
   height: 50vh;
+}
+
+@media screen and (max-width: 375px) {
+  .living-room .container {
+    width: 85%;
+  }
+  .living-room .livingroom-main.divider-top {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .livingroom-main.divider-top {
+    margin-top: 0;
+  }
 }
 
 .section-text {
@@ -872,6 +926,12 @@ aside .specs {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .homepage-main button, .livingroom-main button {
+    font-size: 1.3rem;
+  }
 }
 
 .livingroom-main .odd-row {

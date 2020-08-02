@@ -16,3 +16,22 @@
 
 
 }
+
+ 
+@media screen and (max-width: 375px) {
+    .living-room {
+        .container {
+            width: 85%;
+        }
+        .livingroom-main.divider-top {
+            margin-top: 0;
+        }
+    }
+}
+
+//tablet
+@media screen and (max-width: 768px) {
+    .livingroom-main.divider-top {
+        margin-top: 0;
+    }
+}

@@ -1,13 +1,4 @@
-@mixin header-regular {
-    font-size: 3rem;
-    font-weight: 400;
-    font-family: "Quattrocento Sans", regular;
-}
 
-@mixin heading-black {
-    font-size: 1.9rem;
-    padding-bottom: 30px;
-}
 
 
 @mixin btn-pink {
@@ -27,6 +18,9 @@
         transition: $transition;
         cursor: pointer;
     }
+    @media screen and (max-width: 768px) {
+        font-size: 1.3rem;
+    }
 }
 
 @mixin btn-black {
@@ -45,4 +39,8 @@
         transition: $transition;
         cursor: pointer;
     }
+    @media screen and (max-width: 768px) {
+        font-size: 1.3rem;
+    }
 }
+

@@ -1,60 +1,4 @@
 
-// .contact {
-//     background: linear-gradient(to right, rgba(0, 0, 0 ,.3), rgba(255, 255, 255,.1)),  url(../img/contactus/contactus_image.png);
-//     min-height: 100vh;
-
-//     hgroup {
-//         position: relative;
-//         left: 0;
-//         top: 10rem;
-//         h2 {
-//             font-size: 2.8rem;
-//         }
-//     }
-
-//     form {                  //inputs
-//         min-height: 50vh;
-//         position: relative;
-//         left: 0;
-//         top: 15rem;
-//         align-self: flex-end;
-
-//         input {
-//             display: block;
-//             background: transparent;
-//             border: none;
-//             border-bottom: 2px solid $gray;
-//             width: 40rem;
-//             margin-bottom: 5rem;
-//             color: white;
-//             font-size: 2rem;
-//             &:last-child {
-//                 margin-bottom: 0;
-//             }
-//         }
-    
-    
-//         &:nth-child(2) {    //text-area
-//             display: flex;
-//             align-items: flex-end;
-//             flex-direction: column;
-//             textarea {
-//                 min-height: 10rem;
-//                 width: 40rem;
-//                 align-self: baseline;
-//             }
-
-//         }
-    
-//     }
-
-//     button {
-//         @include btn-pink;
-//         position: relative;
-//         left: 10%;
-//         bottom: 40%;
-//     }
-// }
 
 .contact {
     background: linear-gradient(to right, rgba(0, 0, 0 ,.3), rgba(0,0,0,.3)),  url(../img/contactus/contactus_image.png);
@@ -72,9 +16,10 @@
     '100px button';
     hgroup {
         grid-area: hgroup;
-        margin-bottom: 4rem;
+        margin-bottom: 1.5rem;
         h2 {
             font-size: 2.5rem;
+            margin-top: 3rem;
         }
     }
     .inputs {
@@ -89,6 +34,8 @@
             width: 50rem;
             font-size: 2.2rem;
             color: white;
+            // opacity: 1;
+            // transition: opacity 250ms ease-in-out;
             padding-bottom: 1.5rem;
             background: transparent;
             &:last-child {

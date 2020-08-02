@@ -29,6 +29,12 @@ li {
   height: 100%;
 }
 
+@media screen and (max-width: 375px) {
+  .container {
+    width: 85%;
+  }
+}
+
 body {
   font-family: "Quattrocento Sans", regular;
   font-weight: 400;
@@ -276,6 +282,10 @@ footer .col li a {
   color: white;
 }
 
+footer .col:nth-child(4) ul li:nth-child(3) {
+  text-transform: lowercase;
+}
+
 #footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -323,8 +333,11 @@ footer .col li a {
   #footer .col {
     padding-right: 10px;
   }
+  #footer .col .list-caption {
+    padding-top: 1.5rem;
+  }
   #footer .footer-logo {
-    padding-top: 3rem;
+    padding-top: 1.1rem;
   }
   #footer .socials {
     padding-top: 1rem;
@@ -794,10 +807,7 @@ aside .specs {
 }
 
 @media screen and (max-width: 375px) {
-  .living-room .container {
-    width: 85%;
-  }
-  .living-room .livingroom-main.divider-top {
+  .livingroom-main.divider-top {
     margin-top: 0;
   }
 }

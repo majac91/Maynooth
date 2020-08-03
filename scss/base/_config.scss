@@ -11,7 +11,22 @@ html {
 
 a {
     text-decoration: none;
+    position: relative;
 }
+
+a:hover::after {
+right: 0;
+}
+
+a::after {
+    border-top: .1rem solid $white;
+    content: '';
+    position: absolute; 
+    right: 100%; 
+    left: 0;
+    bottom: .05rem;
+    transition: right .4s cubic-bezier(0, .5, 0, 1)
+    }
 
 li {
     list-style: none;

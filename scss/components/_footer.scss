@@ -48,9 +48,10 @@ footer {
 
 .arrow {
     align-self: flex-end;
-    img {
-        animation: up 2s infinite;
-    }
+    animation: up 2s infinite;
+    a:hover::after {
+        right: 100%;
+        }
 }
 
 

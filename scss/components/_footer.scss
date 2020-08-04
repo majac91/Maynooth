@@ -35,9 +35,14 @@ footer {
 
 .footer-logo {
     padding-top: 3rem;
-
 }
 
+
+div.col:nth-child(1) > a:nth-child(3) { //footer logo
+    &::after {
+        border-top: hidden;
+    }
+}
 .socials {
     .fab {
         font-size: 2rem;

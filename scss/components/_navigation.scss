@@ -3,6 +3,9 @@
     height: 6rem;
     .logo { 
         display: inline-block;
+        a::after {
+            border-top: hidden;
+            }
     }
     .icons {
         display: inline-block;
@@ -26,9 +29,17 @@
         font-size: 1.4rem;
         text-transform: uppercase;
         letter-spacing: 2px;
-
     }
 }
+
+.bottom-navbar.text-dark {
+    a {
+        &::after {
+            border-top: 1px solid black;
+        }
+    }
+}
+
 
 .menu-toggle {
     display: none;

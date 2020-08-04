@@ -273,6 +273,10 @@ footer .col:nth-child(4) ul li:nth-child(3) {
   padding-top: 3rem;
 }
 
+div.col:nth-child(1) > a:nth-child(3)::after {
+  border-top: hidden;
+}
+
 .socials .fab {
   font-size: 2rem;
   color: white;
@@ -322,6 +326,10 @@ footer .col:nth-child(4) ul li:nth-child(3) {
   display: inline-block;
 }
 
+.top-navbar .logo a::after {
+  border-top: hidden;
+}
+
 .top-navbar .icons {
   display: inline-block;
 }
@@ -346,6 +354,10 @@ footer .col:nth-child(4) ul li:nth-child(3) {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.bottom-navbar.text-dark a::after {
+  border-top: 1px solid black;
 }
 
 .menu-toggle {

@@ -1,37 +1,35 @@
 .livingroom-header {
-    background:  linear-gradient(rgba(0, 0, 0 ,.3), rgba(255, 255, 255,.1)),  url(../img/livingroom/livingroom_heroimage.png) no-repeat;
-    background-size: cover;
-    height: 70vh;
-    text-shadow: 1px 2px 3px rgba(0,0,0,0.2);
-    button {
-        @include btn-black;
-    }
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)),
+    url(../img/livingroom/livingroom_heroimage.png) no-repeat;
+  background-size: cover;
+  height: 70vh;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  button {
+    @include btn-black;
+  }
 }
 
 .clearance {
-    @extend .livingroom-header;
-    background:  linear-gradient( rgba(0, 0, 0 ,.3), rgba(0, 0, 0 ,.3)),  url(../img/livingroom/livingroom_clerance_image.png) no-repeat;
-    height: 50vh;
+  @extend .livingroom-header;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/livingroom/livingroom_clerance_image.png) no-repeat;
+  height: 50vh;
 }
-
 
 //Main section is in _grid.css
 
-
- 
-@media screen and (max-width: 375px) {
-
-    .livingroom-header.divider-top {
-        margin-top: 80px;
-    }
-    .livingroom-main.divider-top {
-        margin-top: 0;
-    }
+@media screen and (min-width: 400px) and (max-width: 567px) {
+  .livingroom-header.divider-top {
+    margin-top: 80px;
+  }
+  .livingroom-main.divider-top {
+    margin-top: 0;
+  }
 }
 
 //tablet
 @media screen and (max-width: 768px) {
-    .livingroom-main.divider-top {
-        margin-top: 0;
-    }
+  .livingroom-main.divider-top {
+    margin-top: 0;
+  }
 }
